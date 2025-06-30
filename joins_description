@@ -7,6 +7,15 @@ Query:
 SELECT * 
 FROM Members , Loans ;
 
+Output:
+
++----------+------+----------------+------------+--------+--------+----------+---------+------------+------------+------------+
+| MemberID | Name | Email          | JoinDate   | LoanID | BookID | MemberID | StaffID | LoanDate   | DueDate    | ReturnDate |
++----------+------+----------------+------------+--------+--------+----------+---------+------------+------------+------------+
+|        1 | Doe  | doe@gmail.com  | 2025-06-20 |      1 |      2 |        1 |       1 | 2025-06-01 | 2025-06-15 | NULL       |
+|        2 | Jane | jane@gmail.com | 2025-03-12 |      1 |      2 |        1 |       1 | 2025-06-01 | 2025-06-15 | NULL       |
++----------+------+----------------+------------+--------+--------+----------+---------+------------+------------+------------+
+
 Equi-Join and Natural Join :
 
 The join in which columns are compared for equality is called Equi-Join.
