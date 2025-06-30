@@ -2,6 +2,11 @@ Cartesian Product :
 
 In unrestricted join or Cartesian product of two tables all possible concatenations are formed of all rows to both the tables is called a cartesian product .
 
+Query:
+
+SELECT * 
+FROM Members , Loans ;
+
 Equi-Join and Natural Join :
 
 The join in which columns are compared for equality is called Equi-Join.
