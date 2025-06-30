@@ -43,3 +43,8 @@ FROM Loans
 LEFT JOIN Members ON Loans.MemberID = Members.MemberID
 WHERE Members.MemberID IS NULL;
 
+Output:
+
+Program did not output anything!
+
+- Because all Loans.MemberID values are valid (exist in Members), no rows are returned by this query. So It returns empty set.
