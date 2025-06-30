@@ -1,0 +1,45 @@
+4. FULL OUTER JOIN (Not supported natively, run it with UNION) :
+
+Syntax :
+
+SELECT table1.column1,table1.column2,table2.column1,….
+FROM table1 
+FULL JOIN table2
+ON table1.matching_column = table2.matching_column; 
+
+•	table1 : First table.
+•	table2 : Second table
+•	matching_column : Column common to both the tables.
+
+It shows all members and all loans, including unmatched ones on either side .
+
+Query :
+
+-- FULL OUTER JOIN = LEFT JOIN + RIGHT JOIN minus duplicates
+
+SELECT Members.MemberID, Members.Name, Loans.LoanID, Loans.LoanDate
+FROM Members
+LEFT JOIN Loans ON Members.MemberID = Loans.MemberID
+
+UNION
+
+SELECT Members.MemberID, Members.Name, Loans.LoanID, Loans.LoanDate
+FROM Members
+RIGHT JOIN Loans ON Members.MemberID = Loans.MemberID;
+
+Output:
+
++----------+------+--------+------------+
+| MemberID | Name | LoanID | LoanDate   |
++----------+------+--------+------------+
+|        1 | Doe  |      1 | 2025-06-01 |
+|        2 | Jane |   NULL | NULL       |
++----------+------+--------+------------+
+
+If using SQLite , replace RIGHT JOIN with :
+
+SELECT Loans.MemberID, Members.Name, Loans.LoanID, Loans.LoanDate
+FROM Loans
+LEFT JOIN Members ON Loans.MemberID = Members.MemberID
+WHERE Members.MemberID IS NULL;
+
