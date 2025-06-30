@@ -20,10 +20,10 @@ Learn how to combine data from related tables using different types of SQL joins
 - Loans
 
 ## Queries Include:
-- INNER JOIN: Books + Members on Loans
-- LEFT JOIN: Members with or without loans
-- RIGHT JOIN: (or simulated via LEFT JOIN)
-- FULL OUTER JOIN: Using UNION for unmatched records
+- INNER JOIN : Books + Members on Loans
+- LEFT JOIN : Members with or without loans
+- RIGHT JOIN : loans and any staff who issued them
+- FULL OUTER JOIN : Using UNION for unmatched records
 
 ## What I did :
 
