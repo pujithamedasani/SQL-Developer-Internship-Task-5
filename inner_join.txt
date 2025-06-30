@@ -1,0 +1,39 @@
+As we first take two tables from our library schema.
+We’ll use :
+1. Members – who borrows books
+2. Loans – records of books loaned to members
+
+Now our objective is to combine data from multiple tables 
+Now let us use INNER , LEFT , RIGHT , FULL JOIN between these two tables:
+ 
+Members (MemberID, Name, Email, JoinDate)  
+Loans (LoanID, BookID, MemberID, StaffID, LoanDate, DueDate, ReturnDate)
+
+JOINS :
+A join is a query that combines rows from two or more tables. In a join query , more than one tables is listed in FROM clause. The function combining data from multiple tables is called joining. 
+The WHERE clause is most often used to perform the JOIN function where two or more tables have common columns.
+
+1.	INNER JOIN:
+It only shows members who have loan records 
+
+Syntax :
+
+SELECT table1.column1 , table1.column2 , table2.column1, .... 
+FROM table1 
+INNER JOIN table2 ON table1.matching_column = table2.matching_column;
+
+We can also write JOIN instead of INNER JOIN. JOIN is same as INNER JOIN.
+
+Query:
+
+SELECT Members.MemberID, Members.Name, Loans.LoanID, Loans.LoanDate
+FROM Members
+INNER JOIN Loans ON Members.MemberID = Loans.MemberID;
+
+Output:
+
++----------+------+--------+------------+
+| MemberID | Name | LoanID | LoanDate   |
++----------+------+--------+------------+
+|        1 | Doe  |      1 | 2025-06-01 |
++----------+------+--------+------------+
