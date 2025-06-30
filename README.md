@@ -13,7 +13,7 @@ Learn how to combine data from related tables using different types of SQL joins
 - `right_join` : Queries and description of **RIGHT JOIN**
 - `full_outer_join` : Queries and description of **FULL OUTER JOIN**
 - `output for task5_joins.png` : Output screenshot of task5_joins.sql
-
+- `joins_types` : Description for types of joins and query
 
 ## Tables Used
 - Members
