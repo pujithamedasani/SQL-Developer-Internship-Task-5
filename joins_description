@@ -1,0 +1,14 @@
+Cartesian Product :
+
+In unrestricted join or Cartesian product of two tables all possible concatenations are formed of all rows to both the tables is called a cartesian product .
+
+Equi-Join and Natural Join :
+
+The join in which columns are compared for equality is called Equi-Join.
+
+A non-equi-join as a query that specifies some relationship other than equality between the columns .
+
+The join in which only one of the identical columns (coming from join tables) exists is called Natural join.
+
+The equi join and natural join are equivalent except the duplicate columns are eliminated in the natural join that would otherwise appear in the Equi-Join.
+
