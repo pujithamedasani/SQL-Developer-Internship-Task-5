@@ -7,11 +7,11 @@ Learn how to combine data from related tables using different types of SQL joins
 
 ## Files
 
-- `task5_joins.sql`: Queries using INNER, LEFT, RIGHT, FULL JOINs
+- `task5_joins.sql`: Queries using INNER, LEFT, RIGHT, FULL OUTER JOINs
 - `inner_join` : Queries and description of **INNER JOIN**
 - `left_join` : Queries and description of **LEFT JOIN**
 - `right_join` : Queries and description of **RIGHT JOIN**
-- `full_outer_join` : Queries and description of **FULL JOIN**
+- `full_outer_join` : Queries and description of **FULL OUTER JOIN**
 - `output for task5_joins.png` : Output screenshot of task5_joins.sql
 
 
