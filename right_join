@@ -35,5 +35,6 @@ SELECT Loans.LoanID, Loans.LoanDate, Members.Name
 FROM Loans
 LEFT JOIN Members ON Loans.MemberID = Members.MemberID;
 
+Output:
 
-
+1|2025-06-01|Doe
