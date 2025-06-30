@@ -1,0 +1,27 @@
+2. LEFT JOIN :
+
+It shows all members, even those who never borrowed a book .
+
+Syntax:
+
+SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+LEFT JOIN table2
+ON table1.matching_column = table2.matching_column;
+
+Query:
+
+SELECT Members.MemberID, Members.Name, Loans.LoanID, Loans.LoanDate
+FROM Members
+LEFT JOIN Loans ON Members.MemberID = Loans.MemberID;
+
+- If the LoanID is NULL , then the member hasn’t borrowed anything.
+
+Output:
+
++----------+------+--------+------------+
+| MemberID | Name | LoanID | LoanDate   |
++----------+------+--------+------------+
+|        1 | Doe  |      1 | 2025-06-01 |
+|        2 | Jane |   NULL | NULL       |
++----------+------+--------+------------+
